@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WebBrowser</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="go">Go</string>
+    <string name="back">&lt;-</string>
+    <string name="refresh">Refresh</string>
+    <string name="forward">-&gt;</string>
+    <string name="history">Clear History</string>
+    <string name="URL_Hint">Enter the URL</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+</resources>
