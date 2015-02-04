@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:id="@+id/llsearch">
+    <EditText
+        android:id="@+id/etUrm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:layout_weight="2"
+        android:ems="12" 
+        android:hint="@string/URL_Hint"
+        android:focusableInTouchMode="true" >
+    </EditText>
+
+    <Button
+        android:id="@+id/bgo"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:text="@string/go" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8"
+        android:layout_below="@id/llsearch"
+        android:id="@+id/bNav">
+    
+		    <Button
+		        android:id="@+id/bback"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="2"
+		        android:text="@string/back" />
+		
+		    <Button
+		        android:id="@+id/bfwd"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_weight="2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/forward" />
+		
+		    <Button
+		        android:id="@+id/bref"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_weight="2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/refresh" />
+		
+		    <Button
+		        android:id="@+id/bhis"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_weight="2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/history" />
+    </LinearLayout>
+
+   <LinearLayout
+       	android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/bNav">
+        <WebView
+            android:focusable="true"
+  			android:focusableInTouchMode="true" 
+           	android:layout_width="match_parent"
+        	android:layout_height="fill_parent" 
+        	android:id="@+id/wvBrowser">
+           
+         </WebView>
+     </LinearLayout>
+</RelativeLayout>
